@@ -1,0 +1,17 @@
+alias zrc='nvim ~/.config/zsh'
+alias gdot='cd ~/gitrepo/dotfiles'
+alias mkdir="mkdir -pv" 
+alias ..="cd .."
+alias sd='startx ~/dwmxinitrc'
+alias sx='startx ~/xfcexinitrc'
+alias sk='startx ~/kdexinitrc'
+alias sa='startx ~/awesomexinitrc'
+alias nv='nvim'
+alias vi='vim'
+alias update='sudo pacman -Syyu'
+alias sdn='sudo shutdown now'
+alias gs='git status'
+alias gap='git add -p'
+alias gc1='git clone --depth=1'
+alias cls='clear'
+alias nf='neofetch'

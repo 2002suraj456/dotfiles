@@ -1,0 +1,14 @@
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+# volume controls
+{XF86AudioRaiseVolume, XF86AudioLowerVolume}
+    amixer {-D pulse sset Master 1%+,-D pulse sset Master 1%-};
+XF86AudioMute
+    amixer -D pulse sset Master toggle
+
+XF86AudioMicMute
+	amixer set Capture toggle
+# screen brightness controls
+{XF86MonBrightnessUp, XF86MonBrightnessDown}
+    lux {-a 1, -s 1};
